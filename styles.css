@@ -1,0 +1,93 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #101113;
+}
+
+.calculator {
+  height: 706px;
+  width: 430px;
+  background-color: #404258;
+  border-radius: 30px;
+}
+
+.screen {
+  height: 200px;
+  display: flex;
+  align-items: end;
+}
+
+.display {
+  width: 410px;
+  grid-column: 1 / span 4;
+  background-color: #404258;
+  border: none;
+  overflow: hidden;
+  margin: 0px 20px;
+}
+
+.output {
+  height: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  color: white;
+  font-size: 100px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+
+.button {
+  height: 98px;
+  border: none;
+  font-size: 36px;
+  color: white;
+}
+
+.button:hover {
+  background-color: #5a5c74;
+  cursor: pointer;
+}
+
+.function {
+  background-color: #6b728e;
+}
+
+.operator {
+  background-color: #50577a;
+  font-size: 50px;
+}
+
+.equal {
+  background-color: #50577a;
+  font-size: 50px;
+}
+
+.number {
+  background-color: #474e68;
+}
+
+.zero {
+  border-bottom-left-radius: 30px;
+  grid-column: span 2;
+  text-align: left;
+  padding-left: 43px;
+}
+
+.equal {
+  border-bottom-right-radius: 30px;
+}
+
+.pressed-button {
+  background-color: #5a5c74;
+}
